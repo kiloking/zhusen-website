@@ -9,17 +9,18 @@ function Section04() {
   ]
   return (
     <div
-      className='w-full min-h-screen bg-cover bg-center bg-no-repeat relative'
+      className='w-full min-h-[60vh] md:min-h-screen bg-cover bg-center bg-no-repeat relative'
       style={{
         backgroundImage: `url(${process.env.PUBLIC_URL +'/images/section04_bg.png'})`,
       }}
+      id="case"
     >
 
     <div className='flex flex-col h-full relative pt-20 w-10/12 mx-auto   z-10'>
-      <div className=' p-14 '>
+      <div className=' p-8 md:p-14 '>
         <img src={process.env.PUBLIC_URL+'/images/section04_title.png'} alt="" />
       </div>
-      <div className=' flex space-x-10 px-14 mt-6 '>
+      <div className=' flex flex-col md:flex-row md:space-x-10 px-5 space-y-5 md:space-y-0 md:px-14 mt-6 pb-12 '>
         {
           caseItem.map((item,index)=>{
             return(

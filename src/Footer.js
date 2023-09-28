@@ -51,8 +51,9 @@ function Footer() {
       style={{
         backgroundImage: `url(${process.env.PUBLIC_URL +'/images/footer_bg.png'})`,
       }}
+      id="contact"
     >
-      <div className='flex flex-col md:flex-row items-center justify-between w-10/12 space-x-10   mx-auto py-20'>
+      <div className='flex flex-col md:flex-row items-center justify-between w-10/12 md:space-x-10   mx-auto py-20'>
         <div className='flex flex-col  md:w-5/12    '>
           <div className='w-full md:w-full' >
             <img src={process.env.PUBLIC_URL+'/images/footer_title.png'} alt="" className='w-2/3 ' />

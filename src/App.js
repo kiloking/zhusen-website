@@ -29,9 +29,9 @@ function App() {
       <Section04 />
       <Section05 />
       <Footer />
-      <div className="px-20 py-7 bg-black text-white flex items-center justify-between">
-        <img src={process.env.PUBLIC_URL+'/images/footer_logo.png'} alt="" />
-        <div>地址：桃園市中壢區高鐵站前西路一段286號13樓之9 | 電話：03-287-8868 | 傳真：03-287-7089</div>
+      <div className="px-8 md:px-20 py-7 bg-black text-white flex flex-col md:flex-row md:items-center justify-between">
+        <img src={process.env.PUBLIC_URL+'/images/footer_logo.png'} alt="" className="w-1/3 md:w-auto" />
+        <div className="my-5 md:my-0 text-sm md:text-base" >地址：桃園市中壢區高鐵站前西路一段286號13樓之9 | 電話：03-287-8868 | 傳真：03-287-7089</div>
       </div>
     </div>
   );

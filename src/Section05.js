@@ -6,22 +6,23 @@ function Section05() {
   ]
   return (
     <div
-      className='w-full min-h-screen bg-cover bg-center bg-no-repeat relative'
+      className='w-full min-h-[60vh] md:min-h-screen bg-cover bg-center bg-no-repeat relative'
       style={{
         backgroundImage: `url(${process.env.PUBLIC_URL +'/images/section05_bg.png'})`,
       }}
+      id="news"
     >
 
     <div className='flex flex-col h-full relative pt-20 w-10/12 mx-auto   z-10'>
-      <div className=' p-14 '>
+      <div className=' p-8 md:p-14 '>
         <img src={process.env.PUBLIC_URL+'/images/section05_title.png'} alt="" />
       </div>
-      <div className=' flex space-x-10 px-14 mt-6'>
+      <div className=' flex  md:flex-row md:space-x-10 px-5 space-y-5 md:space-y-0 md:px-14 mt-6 pb-12'>
         {
           projectItem.map((item,index)=>{
             return(
               <div key={'p'+index} className='flex flex-col space-y-5'>
-                <a href={item.url} target='_blank' className='w-2/3 hover:brightness-125 transition-all duration-300'><img src={process.env.PUBLIC_URL+'/images/'+item.image} alt="" /></a>
+                <a href={item.url} target='_blank' className='md:w-2/3 hover:brightness-125 transition-all duration-300'><img src={process.env.PUBLIC_URL+'/images/'+item.image} alt="" /></a>
                 <div className='w-full text-white'>
                   <div className=''>{item.date}</div>
                   <div className='mb-6'>{item.title}</div>
