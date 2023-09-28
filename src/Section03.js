@@ -2,9 +2,9 @@ import React from 'react'
 
 function Section03() {
   const projectItem=[
-    {id:"1",image:"project01.png",title:"新亦ONE",  company:"新亦建設", place:"桃園八德擴大重劃區", url:"https://"},
-    {id:"2",image:"project02.png",title:"偉築新豐洲", company:"偉築建設", place:"桃園青埔航空城", url:"https://" },
-    {id:"3",image:"project03.png",title:"上順艾麗", company:"上順房屋開發", place:"桃園大園客運特區", url:"https://"},
+    {id:"1",image:"project01.png",title:"新亦ONE",  company:"新亦建設", place:"桃園八德擴大重劃區", url:"https://www.maizizi.vaserver.com/xinyi-one/"},
+    {id:"2",image:"project02.png",title:"偉築新豐洲", company:"偉築建設", place:"桃園青埔航空城", url:"https://www.maizizi.vaserver.com/neo-supercity/" },
+    {id:"3",image:"project03.png",title:"上順艾麗", company:"上順房屋開發", place:"桃園大園客運特區", url:"https://www.maizizi.vaserver.com/beautiful-time/"},
   ]
   return (
     <div
@@ -24,12 +24,12 @@ function Section03() {
           projectItem.map((item,index)=>{
             return(
               <div key={'p'+index} className='flex space-x-5'>
-                <div className='w-2/3'><img src={process.env.PUBLIC_URL+'/images/'+item.image} alt="" /></div>
-                <div className='w-1/3 text-white'>
+                <div className='w-6/12'><img src={process.env.PUBLIC_URL+'/images/'+item.image} alt="" /></div>
+                <div className='w- flex flex-col text-white'>
                   <div className='border-b pb-2 mb-2'>{item.place}</div>
                   <div className=''>{item.company}</div>
                   <div className='mb-6'>{item.title}</div>
-                  <a href={item.url} className='px-5 py-1 border transition-all hover:bg-white/30 '>個案網站</a>
+                  <a href={item.url} target='_blank' className='mt-auto px-5 py-1 text-center border transition-all hover:bg-white/30 break-before-all '>個案網站</a>
                 </div>
               </div>
             )
