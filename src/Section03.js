@@ -8,7 +8,7 @@ function Section03() {
   ]
   return (
     <div
-      className='w-full min-h-[60vh] md:min-h-screen bg-cover bg-center bg-no-repeat relativ '
+      className='w-full min-h-[60vh] md:min-h-screen bg-cover bg-center bg-no-repeat relative '
       style={{
         backgroundImage: `url(${process.env.PUBLIC_URL +'/images/section03_bg.png'})`,
       }}
@@ -19,17 +19,20 @@ function Section03() {
       <div className=' p-8 md:p-14 '>
         <img src={process.env.PUBLIC_URL+'/images/section03_title.png'} alt="" />
       </div>
-      <div className=' flex flex-col md:flex-row md:space-x-10 px-5 space-y-5 md:space-y-0 md:px-14 mt-6 pb-12'>
+      <div className=' flex flex-col flex-wrap md:flex-row mx-8  space-y-6 md:space-y-0 mt-6 pb-12'>
         {
           projectItem.map((item,index)=>{
             return(
-              <div key={'p'+index} className='flex space-x-5'>
-                <div className='w-6/12'><img src={process.env.PUBLIC_URL+'/images/'+item.image} alt="" /></div>
-                <div className='w- flex flex-col text-white'>
-                  <div className='border-b pb-2 mb-2'>{item.place}</div>
+              <div key={'p'+index} className='flex flex-col md:flex-row md:space-x-4 md:w-1/3 aspect-[4/2] p-2'>
+                <div className='w-full md:w-1/2'><img src={process.env.PUBLIC_URL+'/images/'+item.image} alt="" className='w-full' /></div>
+                <div className='md:w-32 flex flex-col text-white pt-4 md:pt-0 text-lg md:text-sm'>
+                  <div className='border-b pb-2 mb-2 '>{item.place}</div>
                   <div className=''>{item.company}</div>
                   <div className='mb-6'>{item.title}</div>
-                  <a href={item.url} target='_blank' className='mt-auto px-5 py-1 text-center border transition-all hover:bg-white/30 break-before-all '>個案網站</a>
+                  <div className='border flex justify-center  items-center hover:bg-white/30 mt-auto'>
+                    <a href={item.url} target='_blank' className=' px-5 py-1 text-center transition-all '>個案網站</a>
+                  </div>
+                  
                 </div>
               </div>
             )
