@@ -2,7 +2,7 @@ import React from 'react'
 
 function Section03() {
   const projectItem=[
-    {id:"1",image:"project01.png",title:"新亦ONE",  company:"新亦建設", place:"桃園八德擴大重劃區", url:"https://www.maizizi.vaserver.com/xinyi-one/"},
+    {id:"1",image:"project01.jpg",title:"新亦ONE",  company:"新亦建設", place:"桃園八德擴大重劃區", url:"https://www.maizizi.vaserver.com/xinyi-one/"},
     {id:"2",image:"project02.png",title:"偉築新豐洲", company:"偉築建設", place:"桃園青埔航空城", url:"https://www.maizizi.vaserver.com/neo-supercity/" },
     {id:"3",image:"project03.png",title:"上順艾麗", company:"上順房屋開發", place:"桃園大園客運特區", url:"https://www.maizizi.vaserver.com/beautiful-time/"},
   ]
