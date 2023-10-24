@@ -23,9 +23,9 @@ function Section03() {
         {
           projectItem.map((item,index)=>{
             return(
-              <div key={'p'+index} className='flex flex-col md:flex-row md:space-x-4 md:w-1/3 aspect-[4/2] p-2'>
-                <div className='w-full md:w-1/2'><img src={process.env.PUBLIC_URL+'/images/'+item.image} alt="" className='w-full' /></div>
-                <div className='md:w-32 flex flex-col text-white pt-4 md:pt-0 text-lg md:text-sm'>
+              <div key={'p'+index} className='flex flex-col md:flex-row md:space-x-4 md:w-1/2  lg:w-1/3 p-2'>
+                <div className='w-full md:w-2/3'><img src={process.env.PUBLIC_URL+'/images/'+item.image} alt="" className='w-full' /></div>
+                <div className='md:w-1/2 flex flex-col text-white pt-4 md:pt-0 text-lg md:text-sm'>
                   <div className='border-b pb-2 mb-2 '>{item.place}</div>
                   <div className=''>{item.company}</div>
                   <div className='mb-6'>{item.title}</div>
