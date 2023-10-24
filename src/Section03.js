@@ -30,7 +30,7 @@ function Section03() {
                   <div className=''>{item.company}</div>
                   <div className='mb-6'>{item.title}</div>
                   <div className='border flex justify-center  items-center hover:bg-white/30 mt-auto'>
-                    <a href={item.url} target='_blank' className=' px-5 py-1 text-center transition-all '>個案網站</a>
+                    <a href={item.url} target='_blank' rel="noreferrer" className=' px-5 py-1 text-center transition-all '>個案網站</a>
                   </div>
                   
                 </div>
